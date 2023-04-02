@@ -68,4 +68,9 @@ PROT_WRITE: -W-
 
 PROT_EXEC:  --X
 ```
+Example (set `R-X` permissions):
+```console
+MPROTECT 100 PROT_READ | PROT_EXEC
+```
+
 

@@ -58,7 +58,7 @@ PMAP
 ```console
 MPROTECT <address> <permissions>
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiple permissions will be chained by `|`. The permissions that can be set are:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiple permissions will be chained by `|`. The permissions that can be set are:
 ```console
 PROT_NONE:  ---
 

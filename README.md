@@ -24,7 +24,7 @@ $ make run
 
 You can run the following commands:
 
-1. Allocate a contiguous buffer which will simulate the virtual memory. It will be used as a kernel buffer.
+1. Allocate a contiguous buffer with a certain `size` which will simulate the virtual memory. It will be used as a kernel buffer.
 ```console
 ALLOC_ARENA <size>
 ```
@@ -54,7 +54,7 @@ WRITE <address> <size> <data>
 PMAP
 ```
 
-7. Set permissions for the miniblock positioned at `address`.
+7. Set `permissions` for the miniblock positioned at `address`.
 ```console
 MPROTECT <address> <permissions>
 ```

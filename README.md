@@ -19,7 +19,7 @@ In the background, those blocks miniblocks are not consecutive, but represented 
 In order to build and run the program, in the terminal, type the following command:
 
 ```console
-$ make run
+$ make run_vma
 ```
 
 You can run the following commands:

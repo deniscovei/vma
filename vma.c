@@ -234,6 +234,9 @@ void free_block(arena_t *arena, const add_t address)
 		if (empty(block->miniblock_list))
 			erase(arena->block_list, block_node, clear_block);
 	} else if (miniblock_node == block->miniblock_list->begin) {
+		miniblock_t *next_miniblock = (miniblock_t *)miniblock_node->next->data;
+		block->start_address = next_miniblock->start_address;
+
 		block->size -= miniblock->size;
 		pop_front(block->miniblock_list, clear_miniblock);
 

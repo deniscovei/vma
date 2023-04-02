@@ -26,36 +26,46 @@ You can run the following commands:
 
 1. Allocate a contiguous buffer which will simulate the virtual memory. It will be used as a kernel buffer.
 ```console
-# command used
 ALLOC_ARENA <size>
 ```
 
 2. Free all the allocated memory.
 ```console
-# command used
 DEALLOC_ARENA
 ```
 
 3. Allocate a miniblock of `size` bytes starting at a certain `address` in the arena.
 ```console
-# command used
 ALLOC_BLOCK <address> <size>
 ```
 
 4. Display a number of `size` bytes at a given `address` in the arena. If there is not enough space allocated or the data at the address does not have enouch bytes written, the result will be truncated.
 ```console
-# command used
 READ <address> <size>
 ```
 
 5. Write a number of `size` bytes at a given `address` in the arena. If there is not enouch space allocated to write in the arena, `data` will be truncated.
 ```console
-# command used
 WRITE <address> <size> <data>
 ```
 
 6. Display data about the arena.
 ```console
-# command used
 PMAP
 ```
+
+7. Set permissions for the miniblock positioned at `address`.
+```console
+MPROTECT <address> <permissions>
+```
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiple permissions will be chained by `|`. The permissions that can be set are:
+```console
+PROT_NONE:  ---
+
+PROT_READ:  R--
+
+PROT_WRITE: -W-
+
+PROT_EXEC:  --X
+```
+

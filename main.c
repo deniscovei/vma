@@ -41,7 +41,7 @@ int main(void)
 			arg_count = scanf("%ld%ld", &address, &size);
 			fgetc(stdin);
 			fread(data, sizeof(char), size, stdin);
-			//ignore_buffer(data, size);
+			ignore_buffer(data, size);
 			CHECK_ARGS(false, arg_count, 2, write(arena, address, size, data));
 			break;
 		case READ:

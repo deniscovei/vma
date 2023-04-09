@@ -4,7 +4,7 @@ Name: `Covei Denis` \
 Group: `312CA`
 
 ## Virtual Memory Allocator
-This is the `Virtual Memory Allocator`. It simulates the operating system virtual memory. It is writen in C.
+This is the `Virtual Memory Allocator`. It simulates the operating system virtual memory. It is written in C.
 
 
 ## What does it do?

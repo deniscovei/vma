@@ -12,7 +12,7 @@ A kernel buffer is virtually allocated. That means that the user can work with a
 
 Basically, the user works with a list of blocks, which are rows of consecutive sparsed miniblocks. So at a given moment, a block will start at an address and end at another. Its miniblocks will start at the same start address, will follow one another, and end at the same end address as the block's.
 
-In the background, those blocks miniblocks are not consecutive, but represented as being so.
+In the background, those blocks and miniblocks are not consecutive, but represented as being so.
 
 ## Usage
 

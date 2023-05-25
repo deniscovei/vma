@@ -39,22 +39,27 @@ DEALLOC_ARENA
 ALLOC_BLOCK <address> <size>
 ```
 
-4. Display a number of `size` bytes at a given `address` in the arena. If there is not enough space allocated or the data at the address does not have enouch bytes written, the result will be truncated.
+4. Free the miniblock starting at a certain `address` in the arena.
+```console
+FREE_BLOCK <address>
+```
+
+5. Display a number of `size` bytes at a given `address` in the arena. If there is not enough space allocated or the data at the address does not have enouch bytes written, the result will be truncated.
 ```console
 READ <address> <size>
 ```
 
-5. Write a number of `size` bytes at a given `address` in the arena. If there is not enouch space allocated to write in the arena, `data` will be truncated.
+6. Write a number of `size` bytes at a given `address` in the arena. If there is not enouch space allocated to write in the arena, `data` will be truncated.
 ```console
 WRITE <address> <size> <data>
 ```
 
-6. Display data about the arena.
+7. Display data about the arena.
 ```console
 PMAP
 ```
 
-7. Set `permissions` for the miniblock positioned at `address`.
+8. Set `permissions` for the miniblock positioned at `address`.
 ```console
 MPROTECT <address> <permissions>
 ```

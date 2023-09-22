@@ -1,6 +1,3 @@
-# vma
-  Virtual Memory Allocator
-
 # README
 
 Name: `Covei Denis`
